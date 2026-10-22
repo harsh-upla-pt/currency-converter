@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Firefox */
+/* * {
+  scrollbar-width: thin;
+  scrollbar-color: #3074d3fd #11182700;
+} */
+
+/* Chrome, Edge, Safari */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11182700;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aab3ba98;
+}
+
+.product-list {
+  height: 300px;
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: #64748b #111827;
+}
+
+.product-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 999px;
+}
