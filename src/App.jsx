@@ -40,8 +40,9 @@ function App() {
       })
       .finally(() => {
         console.log("api process finished .");
+        setError("")
       });
-  }, [firstCurrency,secondCurrency,firstVal,secVal]);
+  }, [firstCurrency,secondCurrency,firstVal,secVal]) 
 
   const handleSwap = ()=>{
     setFirstCurrency(secondCurrency)
@@ -58,8 +59,6 @@ function App() {
     console.log("fetched Val : ", Number(fetchedValue));
     
   }, [firstCurrency, secondCurrency, firstVal, secVal, fetchedValue]);
-
-
 
   return (
     <div className="bg-[url('https://images.pexels.com/photos/1629172/pexels-photo-1629172.jpeg')] h-screen bg-no-repeat bg-cover flex items-center justify-center ">
